@@ -1,0 +1,4 @@
+# No third-party dependencies. The pipeline and tests use the Python standard library only,
+# so it runs on a fresh clone with no install step and no API key.
+#
+# Python 3.10+ (uses X | Y type unions and dataclasses).

@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+
+# OS
+.DS_Store
+
+# Build / dist scratch
+.dist/
+build/
+dist/
+*.egg-info/
+
+# Generated run artifacts (reproducible via `python -m scripts.run_pipeline`)
+data/*.jsonl
