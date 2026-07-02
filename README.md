@@ -1,6 +1,6 @@
 # clinical-corpus-pipeline
 
-**Turning messy multi-provider clinical + claims data into trustworthy training examples for an LLM, where every clinical claim in the output traces back to a specific field in a specific source record.**
+**Turning messy multi-provider clinical and claims data into trustworthy training examples for an LLM, where every clinical claim in the output traces back to a specific field in a specific source record.**
 
 The hard part of building training data from healthcare records is not moving bytes; it is trust. Data pulled from dozens of providers, each with its own schema, and joined to billing claims can teach a model two kinds of damage: it can leak a patient's identity (a privacy incident), or it can teach the model something clinically false (a poisoned model). This pipeline is built around a single invariant that attacks both at once: **provenance**. Every generated example carries the exact source field behind every clinical assertion, and a set of quality gates refuses to ship anything that cannot prove it.
 
