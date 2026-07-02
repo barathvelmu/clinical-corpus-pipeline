@@ -25,7 +25,7 @@ What you should see:
 
 - the test suite reports `Ran 54 tests ... OK`;
 - the demo prints one example per outcome: a clean accept, a chart/claims disagreement held for a clinician, a hallucination rejected, and a low-confidence link rejected;
-- the scaled run reports **100% grounding faithfulness** and a **0% PHI-leak rate** on the accepted set.
+- the scaled run reports **100% grounding faithfulness** and a **0% PHI-leak rate** on the accepted set (the recorded evidence is in [RESULTS.md](RESULTS.md)).
 
 On the scaled run, most rejections are `dedup`: the synthetic generator reuses a small set of clinical archetypes, so many templated summaries are near-identical and the dedup gate correctly collapses them. The number to read is not the accept rate but the two quality guarantees above, which hold at volume. Everything is synthetic, authored to match real provider schemas, with zero real PHI.
 
